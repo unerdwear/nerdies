@@ -1,3 +1,17 @@
+@font-face {
+  font-family: HH;
+  src: url("../../fonts/hh/SF_Hollywood_Hills.ttf");
+}
+@font-face {
+  font-family: HHB;
+  font-weight: bold;
+  src: url("../../fonts/hh/SF_Hollywood_Hills_Bold.ttf");
+}
+@font-face {
+  font-family: HHC;
+  src: url("../../fonts/hh/SF_Hollywood_Hills_Condensed.ttf");
+}
+
 html, body {
   height: 100%;
 }
@@ -11,9 +25,11 @@ body#about {
   background-image: url("../../images/about.jpg");
 }
 body {
- -webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+}
+h1 {
+  font-family: HH;
 }
