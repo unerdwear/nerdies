@@ -1,18 +1,20 @@
 require 'rubygems'
 require 'sinatra'
-
-set :public_folder, 'public'
+require 'haml'
 
 get '/' do
-  redirect '/index.html'
+  @id = "home"
+  haml :home
 end
 
 get '/wash' do
-  redirect '/wash.html'
+  @id = "wash"
+  haml :wash
 end
 
 get '/about' do
-  redirect '/about.html'
+  @id = "about"
+  haml :about
 end
 
 

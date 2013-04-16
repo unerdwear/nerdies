@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+}
+body#home {
+  background-image: url("../../images/home.jpg");
+}
+body#wash {
+  background-image: url("../../images/wash.jpg");
+}
+body#about {
+  background-image: url("../../images/about.jpg");
+}
+body {
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
