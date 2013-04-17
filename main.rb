@@ -1,17 +1,10 @@
-require 'rubygems'
-require 'compass'
 require 'sinatra'
+require 'compass'
 require 'sass'
 require 'haml'
-require 'hassle'
 
-configure do
-  Compass.configuration do |config|
-    config.project_path = File.dirname(__FILE__)
-  end
-  set :haml, { :format => :html5 }
-  set :scss, Compass.sass_engine_options
-end
+set :haml, { :format => :html5 }
+set :scss, Compass.sass_engine_options
 
 get '/' do
   @id = "home"

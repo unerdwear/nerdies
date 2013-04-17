@@ -2,8 +2,9 @@
 %html
   %head
     %title Underwear for nerds
+    %link{rel: "stylesheet", href: "stylesheets/fonts.css"}
     %link{rel: "stylesheet", href: "stylesheets/style.css"}
   %body{id: @id}
-    = haml :menu
+    = haml :menu, {layout:false}
     .content
       = yield
