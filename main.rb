@@ -1,8 +1,8 @@
 require 'rubygems'
+require 'compass'
 require 'sinatra'
 require 'haml'
 require 'sass'
-require 'compass'
 
 configure do
   set :haml, { :format => :html5 }
@@ -26,7 +26,6 @@ get '/about' do
 end
 
 get '/stylesheets/*.css' do
-  content_type 'text/css', :charset => 'utf-8'
   filename = params[:splat].first
   scss filename.to_sym, :views => "#{settings.root}/public/stylesheets"
 end
