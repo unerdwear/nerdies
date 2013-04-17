@@ -1,0 +1,87 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "fonts";
+
+html, body {
+  height: 100%;
+}
+body#home {
+  background-image: url("../../images/home.jpg");
+}
+body#wash {
+  background-image: url("../../images/wash.jpg");
+}
+body#about {
+  background-image: url("../../images/about.jpg");
+}
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #000;
+  @include background-size(cover);
+}
+h1 {
+  font-family: HH;
+}
+#menu {
+  padding-top: 20px;
+  width: 960px;
+  margin: 0px auto 0px;
+  position: relative;
+
+  div.wrapper {
+    background: #fff200;
+    height: 99px;
+    @include box-shadow(2px 2px 2px rgba(1,1,2,0.6));
+  }
+  ul {
+    width: 360px;
+    float: left;
+    margin-right: 20px;
+  }
+  li {
+    width: 120px;
+    float: left;
+  }
+  li.bang {
+    margin-top: 25px;
+    text-align: center;
+  }
+  li a {
+    width: 120px;
+  }
+
+  .form {
+    width: 220px;
+    float: left;
+    margin-right: 10px;
+    input {
+      border: 1px solid #000;
+      float: left;
+    }
+    input[type="email"] {
+      background: #fff200;
+      font-size: 16px;
+      padding: 6px 4px;
+      margin: 5px 0px 0px;
+    }
+    input[type="submit"] {
+      margin: 5px 0px 0px;
+      background: #000;
+      font-size: 17px;
+      color: #fff200;
+      padding: 5px 0px;
+      width: 40px;
+    }
+  }
+
+  h2 {
+    color: #ff0000;
+    height: 35px;
+    font-size: 34px;
+    font-family: HHC;
+    margin-top: 20px;
+  }
+  .kitty img {
+    margin-top: -15px;
+  }
+}

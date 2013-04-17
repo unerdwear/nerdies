@@ -1,0 +1,18 @@
+#menu
+  %div.wrapper
+    %ul
+      %li
+        %a{href: "/"}
+          %h1
+            %img{src: "/images/logo.jpg", alt: "logo"}
+      %li.bang
+        %a{href: "/wash"}
+          %img{src: "/images/wash_logo.png", alt: "wash"}
+      %li.bang
+        %a{href: "/about"}
+          %img{src: "/images/about_logo.png", alt: "about"}
+    .form
+      %h2 I want to be hot this supper
+      = haml :mailchimp
+    %a.kitty{href: "https://www.facebook.com/Unerdwear", target: "_blank"}
+      %img{src: "/images/cat.png", alt: "evil kitten with super powers"}
