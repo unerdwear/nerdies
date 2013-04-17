@@ -15,9 +15,9 @@ body#about {
   background-image: url("../../images/about.jpg");
 }
 body {
+  @include background-size(cover);
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #000;
-  @include background-size(cover);
 }
 h1 {
   font-family: HH;
@@ -31,7 +31,7 @@ h1 {
   div.wrapper {
     background: #fff200;
     height: 99px;
-    @include box-shadow(2px 2px 2px rgba(1,1,2,0.6));
+    @include box-shadow(2px 2px 0px rgba(1,1,2,0.6));
   }
   ul {
     width: 360px;
@@ -83,5 +83,30 @@ h1 {
   }
   .kitty img {
     margin-top: -15px;
+  }
+}
+.content {
+  width: 960px;
+  margin: 140px auto 0px;
+}
+
+#washlist {
+  margin-top: 140px;
+}
+
+.wash {
+  margin-bottom: 30px;
+  h4 {
+    height: 43px;
+    width: 100%;
+    background-image: url("../../images/wash_box_top.png");
+  }
+  .box {
+    width: 938;
+    background: #fff url("../../images/dirty.png") 0% 80% no-repeat;
+    padding-bottom: 40px;
+    min-height: 303px;
+    border: 1px solid #000;
+    @include box-shadow(4px 4px 0px rgba(1,1,2,0.6));
   }
 }

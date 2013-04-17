@@ -5,4 +5,5 @@
     %link{rel: "stylesheet", href: "stylesheets/style.css"}
   %body{id: @id}
     = haml :menu
-    = yield
+    .content
+      = yield
