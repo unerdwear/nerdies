@@ -58,7 +58,6 @@ h1 {
   .form {
     width: 220px;
     float: left;
-    margin-right: 10px;
     input {
       border: 1px solid #000;
       float: left;
@@ -153,4 +152,13 @@ h1 {
 }
 #slider{
 
+}
+.social-box {
+  width: 198px;
+  float: right;
+  div.share {
+    float: left;
+    width: 33.3%;
+    margin-top: 20px;
+  }
 }

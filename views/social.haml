@@ -1,0 +1,22 @@
+:javascript
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=460602074003179";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+.social-box
+  #fb-root
+  .share.twwit
+    %a.twitter-share-button{"data-count" =>"vertical", :href => "https://twitter.com/share" } Tweet
+  .share.gplus
+    .g-plusone{"data-size" => "tall", "data-annotation" =>"top"}
+  .fb.share
+    .fb-like{"data-layout" => "box_count", "data-send" => "false", "data-show-faces" => "false"}
