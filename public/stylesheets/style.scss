@@ -6,17 +6,22 @@ html, body {
   height: 100%;
 }
 body#home {
-  background-image: url("../../images/home.jpg");
+  background-image: url("../../images/slajd1.jpg");
+  @include background-size(90%);
+  background-position: 50% 0%;
+
 }
 body#wash {
   background-image: url("../../images/wash.jpg");
+  @include background-size(cover);
+  background-attachment:fixed;
 }
 body#about {
   background-image: url("../../images/about.jpg");
-}
-body {
   @include background-size(cover);
   background-attachment:fixed;
+}
+body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #000;
 }
@@ -93,6 +98,18 @@ h1 {
 
 #washlist {
   margin-top: 140px;
+  .wash img {
+    float: left;
+  }
+  .wash p, .wash h5 {
+    float: left;
+    width: 330px;
+    margin-left: 30px;
+  }
+  .box {
+    clear: both;
+    padding-top: 30px;
+  }
 }
 
 .content {
@@ -110,6 +127,8 @@ h1 {
         width: 938;
         background: #fff;
         border: 1px solid #000;
+        font-size: 18px;
+        line-height: 24px;
         iframe {
           margin: 0 auto;
           display: block;
@@ -120,8 +139,6 @@ h1 {
         }
         &.text {
          padding: 60px 60px;
-         font-size: 18px;
-         line-height: 24px;
         }
       }
       p, h5 {
@@ -134,4 +151,7 @@ h1 {
 .clear {
   clear: both;
   display: block;
+}
+#slider{
+
 }
