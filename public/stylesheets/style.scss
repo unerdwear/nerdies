@@ -26,6 +26,8 @@ body {
 }
 h1 {
   font-family: HH;
+  width: 786px;
+  margin: 0 auto;
 }
 #menu {
   padding-top: 20px;
@@ -96,17 +98,39 @@ h1 {
 
 #washlist {
   margin-top: 140px;
-  .wash img {
+  li img {
     float: left;
+    margin-bottom: 20px;
   }
-  .wash p, .wash h5 {
+  li p, li h5, li pre {
     float: left;
-    width: 330px;
     margin-left: 30px;
   }
+  .find {
+    p, h5 {
+      width: 280px;
+      margin-left: 50px;
+    }
+  }
+  .wash {
+    p, h5 {
+      width: 330px;
+      margin-left: 10px;
+    }
+  }
+
   .box {
     clear: both;
     padding-top: 30px;
+  }
+  pre {
+    font-size: 11px;
+    font-family: Arial;
+    line-height: 12px;
+  }
+  .last {
+    text-align: center;
+    img {float: none}
   }
 }
 
@@ -139,7 +163,7 @@ h1 {
          padding: 60px 60px;
         }
       }
-      p, h5 {
+      p, h5, pre {
         margin-bottom: 10px;
       }
       h5 { font-weight: bold}
