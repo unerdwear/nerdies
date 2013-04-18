@@ -233,3 +233,17 @@ h1 {
   }
 
 }
+.bottom {
+  position: absolute;
+  width: 960px;
+  margin-left: -480px;
+  left: 50%;
+  bottom: 0px;
+  z-index: 1;
+  h2 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 30px;
+  }
+}
