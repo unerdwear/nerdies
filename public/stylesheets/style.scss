@@ -5,11 +5,7 @@ html, body {
   height: 100%;
 }
 body#home {
-  /*background-image: url("../../images/slajd1.jpg");
-  @include background-size(90%);
-  background-position: 50% 0%;
-  */
-
+  background: url("../../images/joke.png") repeat;
 }
 body#wash {
   background-image: url("../../images/wash_bgd.jpg");
@@ -32,6 +28,7 @@ h1 {
   margin: 0 auto;
 }
 #menu {
+  z-index: 10000;
   width: 960px;
   margin: 0px auto 0px;
   position: absolute;
@@ -189,13 +186,7 @@ h1 {
   clear: both;
   display: block;
 }
-#slider{
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0px;
-  overflow: hidden;
-}
+
 .social-box {
   width: 198px;
   float: right;
@@ -204,4 +195,41 @@ h1 {
     width: 33.3%;
     margin-top: 20px;
   }
+}
+#slider {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 820px;
+  }
+  li {
+    width: 90%;
+    text-align: center;
+    cursor: pointer;
+    top: 0px !important;
+    height: 820px;
+  }
+  li img {
+    width: 100%;
+    height: 820px !important;
+  }
+  li.roundabout-in-focus {
+    cursor: default;
+  }
+  li span {
+    display: block;
+    padding-top: 0px;
+  }
+
+  #carbonads-container .carbonad {
+    margin: 0 auto;
+  }
+
 }

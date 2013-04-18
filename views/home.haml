@@ -1,11 +1,17 @@
-%ul#slider
-  %li
-    %img{src: "/images/slajd1.jpg", alt: "You no want?"}
-  %li
-    %img{src: "/images/slad2.jpg", alt: "You no want?"}
-  %li
-    %img{src: "/images/slajd3.jpg", alt: "You no want?"}
-  %li
-    %img{src: "/images/slajd4.jpg", alt: "You no want?"}
+#slider
+  %ul
+    %li
+      %img{src: "/images/slajd1.jpg", alt: "You no want?"}
+    %li
+      %img{src: "/images/slad2.jpg", alt: "You no want?"}
+    %li
+      %img{src: "/images/slajd3.jpg", alt: "You no want?"}
+    %li
+      %img{src: "/images/slajd4.jpg", alt: "You no want?"}
 
 .clear
+
+:javascript
+  $(document).ready(function() {
+      $('#slider ul').roundabout();
+  });
