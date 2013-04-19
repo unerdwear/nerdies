@@ -6,7 +6,7 @@
   %ul#washlist
     %li.wash
       %h4
-        %span STEP 1 - GROUP IN SETS
+        %span STEP 1/5 - GROUP IN SETS
       .box
         %img{src: "/images/wash_1.png", alt: "Wash 1"}
 
@@ -19,62 +19,60 @@
 
     %li.find
       %h4
-        %span STEP 2 - APPROACH YOUR MACHINE
+        %span STEP 2/5 - APPROACH YOUR MACHINE
       .box
-        %img{src: "/images/wash_2.png", alt: "Wash 2", style: "margin-left: 30px"}
-        %p
-          Find a working washing machine. Then take one of your laundry sets (possibly one you need the most) and calmly approach the machine. The trick is to keep breathing deep and not panic--the washing machine can tell when you’re afraid and bad things can happen then. Open the door, check if there’s nothing inside, load, close the door. You’re halfway there!
+        %img{src: "/images/wash_2.png", alt: "Wash 2", style: "margin-left: 20px"}
+        .code-wrapper
+          %pre
+            :plain
+              LaundryMachine washer = getLaundryMachine();
 
-        .clear
-    %li.wash
-      %h4
-        %span STEP 3
-      .box
-        %img{src: "/images/wash_3.png", alt: "Wash 3", style: "margin-left: 20px"}
-        %pre
-          :plain
-            LaundryMachine washer = getLaundryMachine();
+              List&lt;Unerdwear&gt; pileOfUnerdwear = gatherUnerdwear();
+              for (Unerdwear underwear : pileOfUnerdwear) {
+               if (underwear.isntDirty() AND underwear.isntSticky()) {
+                 putOn(underwear);
+               }
+                while (undewear.isntDirty() AND underwear.isntSticky()) {
+                 partyLikeIts1998();
+               }
+                washer.open();
+               washer.load(underwear);
+               washer.close();
+                if (washer.isFull()) {
+                 break;
+               }
+              }
 
-            List&lt;Unerdwear&gt; pileOfUnerdwear = gatherUnerdwear();
-            for (Unerdwear underwear : pileOfUnerdwear) {
-             if (underwear.isntDirty() AND underwear.isntSticky()) {
-               putOn(underwear);
-             }
-              while (undewear.isntDirty() AND underwear.isntSticky()) {
-               partyLikeIts1998();
-             }
-              washer.open();
-             washer.load(underwear);
-             washer.close();
-              if (washer.isFull()) {
-               break;
-             }
-            }
-
-            if (washer.isLoaded()) {
-             washer.start();
-            }
-
-
-        %p
+              if (washer.isLoaded()) {
+               washer.start();
+              }
+          %br
           Code:
           %a{target: "_blank", href: "https://github.com/bartoszfilipowicz"} Rajan
           %br
           Code review:
           %a{target: "_blank", href: "https://gist.github.com/felipeelias"} CGB
-          %br
+          %br/
           Another code review:
           %a{target: "_blank", href: "https://gist.github.com/piotrj"}PiotrJ
-        %p
+          %br/
           Btw
-          %br
           %a{href:"http://en.wikipedia.org/wiki/Laundry_detergent", target: "_blank"}
             Laundry detergent, or washing powder
         .clear
 
+
+
+    %li.last
+      %h4
+        %span STEP 3/5 -- VENN DIAGRAM’S GOLDEN TRIANGLE OF DOING THE LAUNDRY
+      .box
+        %img{src: "/images/wash_3.png", alt: "Wash 3"}
+        .clear
+
     %li.wash
       %h4
-        %span STEP 4 - SET UP YOUR ALARM CLOCK AND WAIT
+        %span STEP 4/5 - SET UP YOUR ALARM CLOCK AND WAIT
       .box
         %img{src: "/images/wash_4.png", alt: "Wash 4"}
         %p
@@ -86,7 +84,7 @@
 
     %li.last
       %h4
-        %span STEP 5 - DRYING USER MANUAL
+        %span STEP 5/5 - DRYING USER MANUAL
       .box
         %img{src: "/images/wash_5.png", alt: "Wash 5"}
         .clear

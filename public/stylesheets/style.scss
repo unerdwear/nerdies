@@ -105,20 +105,21 @@ h1 {
     float: left;
     margin-bottom: 20px;
   }
-  li p, li h5, li pre {
+  li p, li h5, li .code-wrapper {
     float: left;
     margin-left: 30px;
   }
   .find {
-    p, h5 {
+    .code-wrapper {
+      font-size: 13px;
       width: 280px;
-      margin-left: 50px;
+      margin-left: -20px;
     }
   }
   .wash {
-    p, h5, pre {
-      width: 330px;
-      margin-left: 10px;
+    p  {
+      width: 280px;
+      margin-left: 30px;
     }
   }
 
@@ -130,6 +131,7 @@ h1 {
     font-size: 11px;
     font-family: Arial;
     line-height: 12px;
+    margin-bottom: 40px;
   }
   .last {
     .box { text-align: center;}
@@ -175,10 +177,9 @@ h1 {
          padding: 60px 60px;
         }
       }
-      p, h5, pre {
+      p {
         margin-bottom: 10px;
       }
-      h5, h6 { font-weight: bold}
     }
   }
 }
