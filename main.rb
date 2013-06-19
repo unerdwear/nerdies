@@ -21,6 +21,11 @@ get '/about' do
   haml :about
 end
 
+get '/fit' do
+  @id = "fit"
+  haml :fit
+end
+
 get '/stylesheets/*.css' do
   content_type 'text/css', :charset => 'utf-8'
   filename = params[:splat].first
