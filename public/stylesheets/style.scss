@@ -116,8 +116,11 @@ h1 {
     font-family: HHC;
     margin-top: 15px;
   }
-  .kitty img {
-    margin-top: -12px;
+  .kitty  {
+    float: left;
+    img {
+      margin-top: -12px;
+    }
   }
 }
 .content {
@@ -224,9 +227,9 @@ ul.list {
 
 .social-box {
   width: 80px;
-  float: right;
+  float: left;
   div.share {
-    margin-top: 10px;
+    margin-top: 8px;
   }
 }
 
