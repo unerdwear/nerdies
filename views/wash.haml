@@ -1,94 +1,90 @@
-.content
-  %h1
-    %img{src: "/images/wash_header.png", alt: "You no want?"}
+%h1
+  %img{src: "/images/wash_header.png", alt: "You no want?"}
 
 
-  %ul#washlist.list
-    %li.wash
-      %h4
-        %span STEP 1/5 - GROUP IN SETS
-      .box
-        %img{src: "/images/wash_1.png", alt: "Wash 1"}
+%ul#washlist.list
+  %li.wash
+    %h4
+      %span STEP 1/5 - GROUP IN SETS
+    .box
+      %img{src: "/images/wash_1.png", alt: "Wash 1"}
 
-        %p
-          Group all your Nerdies in sets. (ok, and other garments if you really have to or don't have enough Nerdies to fill up your washing machine). Now pay attention! Each set should consist of items in similar colors.
+      %p
+        Group all your Nerdies in sets. (ok, and other garments if you really have to or don't have enough Nerdies to fill up your washing machine). Now pay attention! Each set should consist of items in similar colors.
 
-        %p
-          Why? Turns out when you wash similar clothes together, they are more likely to find a match for themselves--a nice nerdy similar significant other--and this makes them happy. Keep your Nerdies happy!
-        .clear
+      %p
+        Why? Turns out when you wash similar clothes together, they are more likely to find a match for themselves--a nice nerdy similar significant other--and this makes them happy. Keep your Nerdies happy!
+      .clear
 
-    %li.find
-      %h4
-        %span STEP 2/5 - APPROACH YOUR MACHINE
-      .box
-        %img{src: "/images/wash_2.png", alt: "Wash 2", style: "margin-left: 20px"}
-        .code-wrapper
-          %pre
-            :plain
-              LaundryMachine washer = getLaundryMachine();
+  %li.find
+    %h4
+      %span STEP 2/5 - APPROACH YOUR MACHINE
+    .box
+      %img{src: "/images/wash_2.png", alt: "Wash 2", style: "margin-left: 20px"}
+      .code-wrapper
+        %pre
+          :plain
+            LaundryMachine washer = getLaundryMachine();
 
-              List&lt;Unerdwear&gt; pileOfUnerdwear = gatherUnerdwear();
-              for (Unerdwear underwear : pileOfUnerdwear) {
-               if (underwear.isntDirty() AND underwear.isntSticky()) {
-                 putOn(underwear);
-               }
-                while (undewear.isntDirty() AND underwear.isntSticky()) {
-                 partyLikeIts1998();
-               }
-                washer.open();
-               washer.load(underwear);
-               washer.close();
-                if (washer.isFull()) {
-                 break;
-               }
-              }
+            List&lt;Unerdwear&gt; pileOfUnerdwear = gatherUnerdwear();
+            for (Unerdwear underwear : pileOfUnerdwear) {
+             if (underwear.isntDirty() AND underwear.isntSticky()) {
+               putOn(underwear);
+             }
+              while (undewear.isntDirty() AND underwear.isntSticky()) {
+               partyLikeIts1998();
+             }
+              washer.open();
+             washer.load(underwear);
+             washer.close();
+              if (washer.isFull()) {
+               break;
+             }
+            }
 
-              if (washer.isLoaded()) {
-               washer.start();
-              }
-          %br
-          Code:
-          %a{target: "_blank", href: "https://github.com/bartoszfilipowicz"} Rajan
-          %br
-          Code review:
-          %a{target: "_blank", href: "https://gist.github.com/felipeelias"} CGB
-          %br/
-          Another code review:
-          %a{target: "_blank", href: "https://gist.github.com/piotrj"}PiotrJ
-          %br/
-          Btw
-          %a{href:"http://en.wikipedia.org/wiki/Laundry_detergent", target: "_blank"}
-            Laundry detergent, or washing powder
-        .clear
+            if (washer.isLoaded()) {
+             washer.start();
+            }
+        %br
+        Code:
+        %a{target: "_blank", href: "https://github.com/bartoszfilipowicz"} Rajan
+        %br
+        Code review:
+        %a{target: "_blank", href: "https://gist.github.com/felipeelias"} CGB
+        %br/
+        Another code review:
+        %a{target: "_blank", href: "https://gist.github.com/piotrj"}PiotrJ
+        %br/
+        Btw
+        %a{href:"http://en.wikipedia.org/wiki/Laundry_detergent", target: "_blank"}
+          Laundry detergent, or washing powder
+      .clear
 
 
 
-    %li.last
-      %h4
-        %span STEP 3/5 -- VENN DIAGRAM’S GOLDEN TRIANGLE OF DOING THE LAUNDRY
-      .box
-        %img{src: "/images/wash_3.png", alt: "Wash 3"}
-        .clear
+  %li.last
+    %h4
+      %span STEP 3/5 -- VENN DIAGRAM’S GOLDEN TRIANGLE OF DOING THE LAUNDRY
+    .box
+      %img{src: "/images/wash_3.png", alt: "Wash 3"}
+      .clear
 
-    %li.wash
-      %h4
-        %span STEP 4/5 - SET UP YOUR ALARM CLOCK AND WAIT
-      .box
-        %img{src: "/images/wash_4.png", alt: "Wash 4"}
-        %p
-          NOW THIS IS THE BEST! Doing the laundry EARNS you between 45 mins and 2 hours of FREE time!
+  %li.wash
+    %h4
+      %span STEP 4/5 - SET UP YOUR ALARM CLOCK AND WAIT
+    .box
+      %img{src: "/images/wash_4.png", alt: "Wash 4"}
+      %p
+        NOW THIS IS THE BEST! Doing the laundry EARNS you between 45 mins and 2 hours of FREE time!
 
-        %p
-          There's plenty you can do with it, here are our modest suggestions if just staring at your washing machine somehow does not sound exciting enough ;).
-        .clear
+      %p
+        There's plenty you can do with it, here are our modest suggestions if just staring at your washing machine somehow does not sound exciting enough ;).
+      .clear
 
-    %li.last
-      %h4
-        %span STEP 5/5 - DRYING USER MANUAL
-      .box
-        %img{src: "/images/wash_5.png", alt: "Wash 5"}
-        .clear
+  %li.last
+    %h4
+      %span STEP 5/5 - DRYING USER MANUAL
+    .box
+      %img{src: "/images/wash_5.png", alt: "Wash 5"}
+      .clear
 
-  %br
-  .clear
-  #bottom.menu= haml :menu, { layout:false }

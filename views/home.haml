@@ -1,27 +1,7 @@
-#slider
-  %ul
+%ul#slider
+  - ["bacon.png", "lego.png", "flamingos.png", "boxers_2.png", "boxers_1.png"].shuffle.each do |i|
     %li
-      %img.slajd{src: "/images/slajd1.jpg", alt: "You no want?"}
-      %img.info{src: "/images/info.gif", alt: "Info"}
-    %li
-      %img.slajd{src: "/images/slad2.jpg", alt: "You no want?"}
-      %img.info{src: "/images/info.gif", alt: "Info"}
-    %li
-      %img.slajd{src: "/images/slajd3.jpg", alt: "You no want?"}
-      %img.info{src: "/images/info.gif", alt: "Info"}
-    %li
-      %img.slajd{src: "/images/slajd4.jpg", alt: "You no want?"}
+      %img.slajd{src: "/images/#{i}", alt: "You no want?"}
       %img.info{src: "/images/info.gif", alt: "Info"}
 
-  .message
-    %h2
-      Oh, no jut scrolled somewhere
-      you were not supposed to scroll!
-    %p
-      You bad hacker! you will delete the whole interwebz!!
 .clear
-
-:javascript
-  $(document).ready(function() {
-      $('#slider ul').roundabout({autoplay: true, autoplayDuration: 3000});
-  });
