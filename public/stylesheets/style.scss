@@ -57,9 +57,10 @@ h1 {
     @include box-shadow(2px 2px 0px rgba(1,1,2,0.6));
   }
   ul {
-    width: 500px;
+    width: 510px;
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
+    overflow: hidden;
   }
   li {
     width: 110px;
@@ -134,7 +135,7 @@ h1 {
 }
 
 #home .content {
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 #fit .content {
@@ -226,10 +227,17 @@ ul.list {
 }
 
 .social-box {
-  width: 80px;
+  width: 70px;
   float: left;
-  div.share {
-    margin-top: 8px;
+  margin-left: -5px;
+  .twwit {
+    margin-top: 12px;
+  }
+  .gplus {
+    margin-top: 5px;
+  }
+  .fb {
+    margin-top: 5px;
   }
 }
 
