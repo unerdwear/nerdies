@@ -92,12 +92,7 @@ caption,  th,  td  {
   display: none;
 }
 .demo-notice {
-  display: block;
-  background: #fc0000;
-  text-align: center;
-  font-size: 20px;
-  padding: 10px;
-  color: #fcff00;
+  display: none;
 }
 .top-cart .block-content .block-subtitle .close-btn  {
   margin: 0px;
@@ -650,6 +645,7 @@ block block-layered-nav .block .block-content,  block-progress  {
   width: 355px;
 }
 .product-view .product-shop {
+  min-height: 530px;
 }
 .col2-left-layout .product-view .product-collateral,  .col2-right-layout .product-view .product-collateral  {
   width: auto;
@@ -1474,7 +1470,11 @@ ul.social li  {
 ul#nerdiespreview li {
   position: relative;
 }
-ul#nerdiespreview li a {
+ul#nerdiespreview li:hover span {
+  display: block;
+}
+ul#nerdiespreview li span {
+  display: none;
   position: absolute;
   top: 33%;
   left: 33%;
@@ -1483,7 +1483,6 @@ ul#nerdiespreview li a {
   background: #000;
   font-size: 100px;
   color: #fff;
-  display: block;
   line-height: 120px;
   text-transform: uppercase;
   text-decoration: none;
@@ -1517,13 +1516,19 @@ ul#nerdiespreview li a {
   height: 100%;
 }
 .promo .box-last {
-  margin-top: 30px;
+  margin-top: 15px;
   float: left;
   width: 52%;
-  margin-left: 5%;
-  font-size: 28px;
-  line-height: 42px;
+  margin-left: 2%;
+  font-size:  40px;
+  line-height: 50px;
   letter-spacing: 1.5px;
+}
+.promo .box-last li {
+  padding-left: 60px;
+}
+.promo .box-last ul {
+  margin: 0px;
 }
 .promo .box-last span {
   color: #fc0000;
@@ -1792,6 +1797,9 @@ ul#nerdiespreview li a {
 .footer .extra-links {
   list-style: none;
 }
+.footer .extra-links .blog {
+  display: none;
+}
 
 #collateral-tabs {
   padding: 0px;
@@ -1845,18 +1853,15 @@ ul#nerdiespreview li a {
 }
 .social-box {
   float: left;
+  width: 85px;
+  margin-left: 4%;
+}
+.social-box .fb-like {
+  margin-top: 7px;
 }
 .social-box div {
   float: left;
   margin-left: 5px;
-  margin-top: 20px;
-  margin-top: 20px;
-}
-.social-box .fb-like {
-  margin-top: 24px;
-}
-.social-box .twwit {
-  margin-top: 24px;
 }
 .checkout-cart-index .page-title.title-buttons h1 {
   float: none;
@@ -1915,15 +1920,16 @@ span.validation-error input, div.validation-error input {
   background: #fcff00;
   margin-top: -5px;
   float: right;
-  width: 30%;
+  width: 47%;
 }
 .mailchimp input[type=email] {
   font-size: 18px !important;
   margin-top: 10px;
   vertical-align: top;
   width: 66%;
-  margin: 7px 0px 0px 0.5%;
+  margin: 7px 1% 0px 10%;
   padding: 3px 0px 9px;
+  float: left;
   border: 0px;
   color: #ff00ff;
   background: #fcff00;
@@ -1945,11 +1951,29 @@ span.validation-error input, div.validation-error input {
   .checkout-onepage-index, .checkout-cart-index, .cms-about, .sales-guest-form, .contacts-index-index, .cms-privacy, .cms-talk {
     background-size: auto;
   }
-  .social-box {
-    width: 85px;
+  .product-view .product-shop {
+    min-height: auto;
   }
-  .social-box .fb-like {
-    margin-top: 7px;
+  .footer, address.copyright {
+    font-size: 13px;
+  }
+  .footer .extra-links .blog {
+    display: block;
+  }
+  .mailchimp form {
+    margin: 0px;
+    float: none;
+    width: 100%;
+    display: block;
+  }
+  .mailchimp input[type=submit] {
+    height: 40px;
+  }
+  .mailchimp input[type=email] {
+    margin: 8px 0% 0px 5%
+  }
+  .header-panel .widget-static-block li.blog {
+     display: none;
   }
   .social-box .twwit {
     margin-top: 0px;
@@ -1967,9 +1991,9 @@ span.validation-error input, div.validation-error input {
      font-size: 40px !important;
 
   }
-  ul#nerdiespreview li a  {
-    font-size: 60px;
-    line-height: 70px;
+  ul#nerdiespreview li span  {
+    font-size: 70px;
+    line-height: 80px;
   }
   .tagline, .promo .box-first, .promo .box-last {
     font-size: 20px !important;
@@ -2170,6 +2194,12 @@ span.validation-error input, div.validation-error input {
   .footer ul {
     font-size: 12px;
   }
+  .footer .extra-links .blog {
+    display: none;
+  }
+  .header-panel .widget-static-block li.blog {
+     display: block;
+  }
    address.copyright span {
       display: none;
    }
@@ -2199,7 +2229,7 @@ span.validation-error input, div.validation-error input {
     margin-bottom: 40px;
     margin-top: 40px;
    }
-  ul#nerdiespreview li a  {
+  ul#nerdiespreview li span  {
     font-size: 30px;
     line-height: 35px;
   }
@@ -2365,16 +2395,7 @@ span.validation-error input, div.validation-error input {
     padding: 0px;
     margin: 0px;
   }
-  .mailchimp form {
-    margin: 0px;
-    float: none;
-    width: 100%;
-    display: block;
-  }
-  .mailchimp input[type=submit] {
-    height: 40px;
-  }
-  ul#nerdiespreview li a {
+  ul#nerdiespreview li span {
     font-size: 15px;
     line-height: 18px;
   }
