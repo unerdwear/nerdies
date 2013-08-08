@@ -1470,11 +1470,8 @@ ul.social li  {
 ul#nerdiespreview li {
   position: relative;
 }
-ul#nerdiespreview li:hover span {
-  display: block;
-}
 ul#nerdiespreview li span {
-  display: none;
+  display: block;
   position: absolute;
   top: 33%;
   left: 33%;
